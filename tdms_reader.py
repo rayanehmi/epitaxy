@@ -19,6 +19,11 @@ def read_channel(tdmsFile, groupName, channelName):
     return channel_data
 
 
+def read_channel2(tdmsFile):
+    all_data = tdmsFile.groups()
+    print(all_data["1"][:])
+    return
+
 # Plot un fichier TDMS à partir de son nom
 def plot_tdms(fileName, xAxisGroup, xAxisName, yAxisGroup, yAxisName):
     file = load_tdms(path + fileName)
