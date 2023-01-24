@@ -3,6 +3,7 @@ import numpy as np
 from scipy.signal import fftconvolve
 import numpy as np
 import matplotlib.pyplot as plt
+from database import Layer, Step
 
 
 # Takes a reflectivity tdms file and extracts a period
